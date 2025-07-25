@@ -1,0 +1,29 @@
+body{ background-image: url(fondo\ llano.jpeg);
+background-size: cover;
+height: 300px;
+margin: 0;
+}
+.contenido{
+position: relative;
+font-size: 4rem;
+}
+.letras1{
+    position: absolute;
+    opacity: 0;
+    animation: aparecer 3s ease-in-out forwards ;
+}
+.letras2{
+    animation-delay: 3s;
+}
+@keyframes aparecer {
+    0%{ opacity: 0;
+        transform: scale(0.5);}
+    30%{opacity: 50;
+        transform: scale(0.8);}
+    50%{opacity: 60;
+        transform: scale(1);}
+    80%{opacity: 100;
+        transform: scale(0.8);}
+    100%{opacity: 0;
+        transform: scale(0.5);}
+}
